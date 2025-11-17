@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CricketMaster – Smart Cricket Analytics & Live Scores</title>
+    <meta name="description" content="CricketMaster is your smart companion for live scores, player stats, and cricket analytics." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Header / Nav -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <div class="nav-left">
+                <span class="logo" aria-label="CricketMaster logo">
+                    🏏 CricketMaster
+                </span>
+            </div>
+
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#live-scores">Live Scores</a></li>
+                <li><a href="#player-compare">Player Stats</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Dark mode toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Your Cricket, Your Stats.</h1>
+                <p class="hero-subtitle">
+                    Track live scores, player insights, and match analytics — all in one place.
+                </p>
+                <div class="hero-actions">
+                    <a href="#live-scores" class="btn btn-primary">Start Tracking</a>
+                    <a href="#features" class="btn btn-secondary">Watch Demo</a>
+                </div>
+                <p class="hero-tagline">
+                    Built for players, coaches, fantasy leagues, and die-hard fans.
+                </p>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <!-- You can swap this for an SVG or image later -->
+                <div class="cricket-field">
+                    <div class="pitch"></div>
+                    <div class="bat"></div>
+                    <div class="ball"></div>
+                </div>
+                <p class="hero-visual-caption">Visualizing every boundary, over by over.</p>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features" class="section features" aria-labelledby="features-title">
+            <div class="section-header">
+                <h2 id="features-title">Why CricketMaster?</h2>
+                <p>Everything you need to understand and enjoy the game at a deeper level.</p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>🟢 Live Match Tracking</h3>
+                    <p>Follow every ball with real-time updates, run rate, and momentum indicators.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>📊 Advanced Analytics</h3>
+                    <p>Break down batting and bowling performance across formats and conditions.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>⚔️ Player Comparison</h3>
+                    <p>Compare two players head-to-head across runs, strike rate, wickets, and more.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>🤖 Smart Insights</h3>
+                    <p>See projected scores, win probabilities, and key turning points in real time.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- LIVE SCORES SECTION (Interactive planned) -->
+        <section id="live-scores" class="section live-scores" aria-labelledby="live-scores-title">
+            <div class="section-header">
+                <h2 id="live-scores-title">Live Scores Snapshot</h2>
+                <p>Sample data to demonstrate how CricketMaster surfaces match insights.</p>
+            </div>
+
+            <div class="match-grid" aria-live="polite">
+                <!-- Match Card 1 -->
+                <article class="match-card">
+                    <button class="match-toggle" aria-expanded="false">
+                        <div class="match-basic">
+                            <h3>India vs Australia – ODI</h3>
+                            <p>India 286/7 (48.3)</p>
+                            <p>Required: 32 runs from 9 balls</p>
+                        </div>
+                        <span class="match-toggle-icon">▼</span>
+                    </button>
+                    <div class="match-details" hidden>
+                        <p><strong>Run Rate:</strong> 5.89</p>
+                        <p><strong>Top Batter:</strong> Rohit Sharma – 104 (93)</p>
+                        <p><strong>Top Bowler:</strong> Starc – 3/52</p>
+                        <p><strong>Match Momentum:</strong> Edge of the seat!</p>
+                    </div>
+                </article>
+
+                <!-- Match Card 2 -->
+                <article class="match-card">
+                    <button class="match-toggle" aria-expanded="false">
+                        <div class="match-basic">
+                            <h3>CSK vs MI – T20</h3>
+                            <p>CSK 192/4 (20)</p>
+                            <p>MI 84/3 (10.2)</p>
+                        </div>
+                        <span class="match-toggle-icon">▼</span>
+                    </button>
+                    <div class="match-details" hidden>
+                        <p><strong>Required Rate:</strong> 10.9 RPO</p>
+                        <p><strong>Top Batter:</strong> Suryakumar Yadav – 45 (21)</p>
+                        <p><strong>Top Bowler:</strong> Jadeja – 2/15</p>
+                        <p><strong>Win Predictor:</strong> CSK 72% | MI 28%</p>
+                    </div>
+                </article>
+
+                <!-- Match Card 3 -->
+                <article class="match-card">
+                    <button class="match-toggle" aria-expanded="false">
+                        <div class="match-basic">
+                            <h3>Pakistan vs England – Test</h3>
+                            <p>ENG 320 &amp; 188/3</p>
+                            <p>PAK 275 &amp; 0/1 (2)</p>
+                        </div>
+                        <span class="match-toggle-icon">▼</span>
+                    </button>
+                    <div class="match-details" hidden>
+                        <p><strong>Lead:</strong> England by 233 runs</p>
+                        <p><strong>Top Batter:</strong> Root – 146*</p>
+                        <p><strong>Top Bowler:</strong> Shaheen – 4/68</p>
+                        <p><strong>Session Summary:</strong> England in control but cracks appearing.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PLAYER COMPARISON SECTION (Interactive planned) -->
+        <section id="player-compare" class="section player-compare" aria-labelledby="player-compare-title">
+            <div class="section-header">
+                <h2 id="player-compare-title">Compare Players Head-to-Head</h2>
+                <p>Select any two players to see how they stack up.</p>
+            </div>
+
+            <form class="compare-form" aria-label="Player comparison tool">
+                <div class="form-row">
+                    <label for="player-a">Player A</label>
+                    <select id="player-a" name="player-a">
+                        <option value="">Select a player</option>
+                        <option value="kohli">Virat Kohli</option>
+                        <option value="smith">Steve Smith</option>
+                        <option value="babar">Babar Azam</option>
+                        <option value="root">Joe Root</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="player-b">Player B</label>
+                    <select id="player-b" name="player-b">
+                        <option value="">Select a player</option>
+                        <option value="rohit">Rohit Sharma</option>
+                        <option value="warner">David Warner</option>
+                        <option value="williamson">Kane Williamson</option>
+                        <option value="smith">Steve Smith</option>
+                    </select>
+                </div>
+
+                <button type="button" id="compare-btn" class="btn btn-primary">
+                    Compare Stats
+                </button>
+            </form>
+
+            <div class="compare-results" id="compare-results" aria-live="polite">
+                <p class="placeholder-text">Choose two players and hit “Compare Stats” to view detailed numbers.</p>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION (Accordion planned) -->
+        <section id="faq" class="section faq" aria-labelledby="faq-title">
+            <div class="section-header">
+                <h2 id="faq-title">Frequently Asked Questions</h2>
+                <p>Quick answers about how CricketMaster works.</p>
+            </div>
+
+            <div class="faq-list">
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What stats does CricketMaster track?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" hidden>
+                        <p>
+                            We track runs, wickets, strike rate, economy rate, averages, partnerships,
+                            wagon wheels, and more — across formats and competitions.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is live match data free to use?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" hidden>
+                        <p>
+                            Yes! Sample live feeds are free for fans. Premium tiers add deeper analytics
+                            and historical breakdowns.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Which leagues and formats are supported?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" hidden>
+                        <p>
+                            We support international formats (Tests, ODIs, T20Is) plus major leagues like IPL,
+                            BBL, PSL, The Hundred, and more.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can I use CricketMaster for fantasy leagues?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" hidden>
+                        <p>
+                            Absolutely. Use our projections, form charts, and match-ups to draft smarter teams
+                            and make better captaincy calls.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SLIDER (Interactive planned) -->
+        <section id="testimonials" class="section testimonials" aria-labelledby="testimonials-title">
+            <div class="section-header">
+                <h2 id="testimonials-title">What Cricket Lovers Say</h2>
+            </div>
+
+            <div class="testimonial-wrapper">
+                <button class="slider-btn" id="prev-testimonial" aria-label="Previous testimonial">
+                    ‹
+                </button>
+
+                <div class="testimonial-slider" aria-live="polite">
+                    <article class="testimonial active">
+                        <p class="quote">
+                            “As a coach, I use CricketMaster to spot patterns in my bowlers’ spells.
+                            It saves hours of manual analysis.”
+                        </p>
+                        <p class="author">— Coach R. Kumar, U19 Academy</p>
+                    </article>
+
+                    <article class="testimonial">
+                        <p class="quote">
+                            “I follow every IPL game and this is the only tab I keep open for live stats
+                            and win probabilities.”
+                        </p>
+                        <p class="author">— Ananya, Hardcore CSK Fan</p>
+                    </article>
+
+                    <article class="testimonial">
+                        <p class="quote">
+                            “My fantasy league rank shot up after I started using the player comparison tool.
+                            Total game changer.”
+                        </p>
+                        <p class="author">— Farhan, Fantasy League Player</p>
+                    </article>
+                </div>
+
+                <button class="slider-btn" id="next-testimonial" aria-label="Next testimonial">
+                    ›
+                </button>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact" aria-labelledby="contact-title">
+            <div class="section-header">
+                <h2 id="contact-title">Stay in the Cricket Loop</h2>
+                <p>Sign up for early access, release notes, and feature updates.</p>
+            </div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+
+                <div class="form-row">
+                    <label for="favorite-player">Favorite Player</label>
+                    <input id="favorite-player" name="favorite-player" type="text" />
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Join the Waitlist
+                </button>
+
+                <p class="form-message" id="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>© <span id="year"></span> CricketMaster. Built for cricket fans everywhere.</p>
+        <p class="footer-meta">
+            Auto-deployed with GitHub Pages • Crafted with AI-assisted Vibe Coding
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
